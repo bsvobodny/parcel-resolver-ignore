@@ -44,11 +44,7 @@ You can find example use-cases below.
 ```jsonc
 {
   // An array of Regex patterns
-  "parcelIgnore": [
-    "jquery.min.js",
-    "privacy-policy.html",
-    "images\/*.*"
-  ]
+  "parcelIgnore": ["jquery.min.js", "privacy-policy.html", "images/*.*"]
 }
 ```
 
@@ -83,9 +79,7 @@ You can find example use-cases below.
 ```jsonc
 {
   // An array of Regex patterns
-  "parcelIgnore": [
-    "{{*.*}}"
-  ]
+  "parcelIgnore": ["{{*.*}}"]
 }
 ```
 
@@ -108,7 +102,7 @@ You can find example use-cases below.
 </html>
 ```
 
-3. Ignoring files based on NODE_ENV value : "development" (`parcel serve`) or "production" (`parcel build`) or others
+3. Ignoring files based on NODE_ENV value : "development" (`parcel serve`) or "production" (`parcel build`) or custom.
 
 **package.json**
 
@@ -116,20 +110,11 @@ You can find example use-cases below.
 {
   // An object containing dev and/or prod files to ignore
   "parcelIgnore": {
-    "development": [
-      "privacy-policy.html",
-      "images\/*.*"
-    ],
-    "production": [
-      "jquery.min.js",
-      "images\/*.*"
-    ],
-    "test": [
-      "jquery.min.js"
-    ]
+    "development": ["privacy-policy.html", "images/*.*"],
+    "production": ["jquery.min.js", "images/*.*"],
+    "test": ["jquery.min.js"]
   }
 }
-
 ```
 
 **index.html**
